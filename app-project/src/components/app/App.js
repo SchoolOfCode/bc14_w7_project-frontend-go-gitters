@@ -1,5 +1,7 @@
 import React from "react"
+import CardCarousel from "../flashcards";
 import './App.css';
+import "../flashcards/index.css"
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
         <p>
           OUR HOME PAGE!!!
         </p>
+          <CardCarousel class="carousel"></CardCarousel>
       </header>
     </div>
   );
