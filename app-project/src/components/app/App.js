@@ -1,5 +1,6 @@
 import React from "react"
 import './App.css';
+import MultipleChoiceQ from "../Quiz/MCQs";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <p>
           OUR HOME PAGE!!!
         </p>
+        <MultipleChoiceQ />
       </header>
     </div>
   );
