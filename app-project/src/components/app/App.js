@@ -10,8 +10,8 @@ function App() {
         <p>
           OUR HOME PAGE!!!
         </p>
-          <CardCarousel class="carousel"></CardCarousel>
       </header>
+      <div><CardCarousel/></div>
     </div>
   );
 }
