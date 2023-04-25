@@ -2,10 +2,20 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@mui/material'
 import "./index.css"
-import shadows from '@mui/material/styles/shadows';
+// import Carousel from 'react-elastic-carousel'
+// import Item from "./item"
+
+
+ // export default function CardCarousel() {
+
+ /* return <Carousel itemsToShow={3}>
+  <Item text="test"/>
+  <Item text="test 2"/>
+</Carousel>} */
+
 
 export default function CardCarousel(props)
-{
+ {
     var items = [
         {
             name: "JSX",
@@ -57,5 +67,3 @@ export default function CardCarousel(props)
         )
     }
 }
-
-
