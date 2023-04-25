@@ -26,7 +26,16 @@ export default function CardCarousel(props)
             description: "State is a JavaScript object that stores data and determines how a component renders and behaves. When the state of a component changes, React will automatically update the component to reflect those changes. State is an essential concept in React because it enables developers to create dynamic and interactive user interfaces",
         },
             {name: "Array properties",
-            description: "Array elements are object properties in the same way that toString is a property (to be specific, however, toString() is a method). Nevertheless, trying to access an element of an array as follows throws a syntax error because the property name is not valid:"}
+            description: "Array elements are object properties in the same way that toString is a property (to be specific, however, toString() is a method). Nevertheless, trying to access an element of an array as follows throws a syntax error because the property name is not valid:"},
+
+            {name: "GIT Branches",
+            description: "You can use branches to safely experiment with changes to your project. Branches isolate your development work from other branches in the repository. For example, you could use a branch to develop a new feature or fix a bug. Use git checkout -b branch-name in the terminal to get branching!"}, 
+
+            {name: "Changing cases", 
+        description: "You can type stringName.toLowerCase() or stringName.toUpperCase() to change the case of a string."}, 
+
+            {name: "Splitting a number", 
+        description: "To split a number into an array in JavaScript, call the Array.from() method, passing the number converted to a string as the first argument, and the Number constructor as the second, i.e. Array.from(String(num), Number)"}
     ]
 
     return (
