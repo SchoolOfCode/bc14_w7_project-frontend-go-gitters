@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@mui/material'
 import "./index.css"
+import shadows from '@mui/material/styles/shadows';
 
 export default function CardCarousel(props)
 {
@@ -19,15 +20,20 @@ export default function CardCarousel(props)
     ]
 
     return (
+
     <div className='carousel'>
+    <h1>Flashcard Bank</h1>
         <Carousel 
         style={{width: "500px"}}
+        navButtonsAlwaysVisible= {true}
         navButtonsProps={{
             style: {
-                backgroundColor: "cornflowerblue",
-                borderRadius: 0
+                backgroundColor: "black",
+                borderRadius: 100,
+                height: 4,
+                width: 4,
             }
-        }}>
+        }}> 
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
@@ -38,11 +44,11 @@ export default function CardCarousel(props)
     function Item(props)
     {
         return (
-        <div className='card'>
-            <Paper 
+        <div class= "holder">
+            <Paper className='card'
             variant= "outlined"
             elevation= '24'
-            style={{width: "500px", backgroundColor: 'red'}}
+            style={{width: "500px",  backgroundColor: 'gold' }}
              >
                 <h2>{props.item.name}</h2>
                 <p>{props.item.description}</p>
