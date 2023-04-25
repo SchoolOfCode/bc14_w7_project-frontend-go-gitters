@@ -2,16 +2,15 @@ import React from "react"
 import CardCarousel from "../flashcards";
 import './App.css';
 import "../flashcards/index.css"
+import Navbar from "../nav/nav"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          OUR HOME PAGE!!!
-        </p>
+      <Navbar></Navbar>
       </header>
-      <div><CardCarousel/></div>
+      <div className= "div1"><CardCarousel/></div>
     </div>
   );
 }
