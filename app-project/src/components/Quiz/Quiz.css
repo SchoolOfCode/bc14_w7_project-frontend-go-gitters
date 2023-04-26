@@ -4,3 +4,15 @@ li {
     padding: 2px;
     margin: 5px;
 }
+
+li:active {
+    background-color: aquamarine;
+}
+
+li:focus {
+    background-color: aquamarine;
+}
+
+li:visited {
+    background-color: aquamarine;
+}
