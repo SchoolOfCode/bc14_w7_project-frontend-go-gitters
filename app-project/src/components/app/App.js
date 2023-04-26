@@ -3,7 +3,7 @@ import CardCarousel from "../flashcards";
 import './App.css';
 import "../flashcards/index.css"
 import Navbar from "../nav/nav"
-import Quiz from "../quiz/Quiz";
+import Quiz from "../Quiz/Quiz";
 
 
 function App() {
