@@ -33,9 +33,90 @@ function Quiz() {
             {answerText: "A programming language"},
             {answerText: "A syntax extension for JavaScript"},
         ]
-       }]
+       }, 
 
-   
+       {
+       question: "What is the purpose of a constructor in a React component?", 
+       questionNumber: "3",
+       answerOptions: [
+            {answerText: "To create the component's HTML structure"},
+            {answerText: "To initialize the component's state and bind event handlers"}, 
+            {answerText: "To set the component's CSS styles"},
+            {answerText: "To handle user input"},
+       ]}, 
+        
+       {
+        question: "How do you render a React component?",
+        questionNumber: "4",
+        answerOptions: [
+             {answerText: "By calling its render() method"},
+             {answerText: "By calling its constructor"}, 
+             {answerText: "By using the ReactDOM.render() method"},
+             {answerText: "By setting the component's state"},
+        ]}, 
+
+        {
+        question: "What is the difference between props and state in a React component?", 
+        questionNumber: "5", 
+        answerOptions: [
+            {answerText: "Props are used to pass data to a component, while state is used to manage data within a component"}, 
+            {answerText: "Props and state are the same thing"}, 
+            {answerText: "Props are used for styling, while state is used for data management"}, 
+            {answerText: "State is used to pass data to a component, while props are used to manage data within a component"}, 
+    ]}, 
+
+        {
+        question: "What is the purpose of the render() method in a React component?", 
+        questionNumber: "6", 
+        answerOptions: [
+            {answerText: "To update the component's state"}, 
+            {answerText: "To render the component's HTML structure"}, 
+            {answerText: "To bind event handlers to the component"}, 
+            {answerText: "To pass data to child components"}, 
+        ]}, 
+    
+        {
+        question: "How do you define a functional component in React?", 
+        questionNumber: "7", 
+        answerOptions: [
+            {answerText: "By extending the Component class"}, 
+            {answerText: "By using the function keyword"}, 
+            {answerText: "By using the render() method"}, 
+            {answerText: "By creating a new instance of the React.Component class"}, 
+    ]}, 
+
+        {
+        question: "What is the purpose of the key prop in a React component?", 
+        questionNumber: "8", 
+        answerOptions: [
+            {answerText: "To uniquely identify a component in a list"}, 
+            {answerText: "To set the component's CSS styles"}, 
+            {answerText: "To define the component's event handlers"}, 
+            {answerText: "To define the component's props"}, 
+    ]},
+
+        {
+        question: "How do you pass data from a parent component to a child component in React?", 
+        questionNumber: "9",
+        answerOptions: [
+            {answerText: "By using props"}, 
+            {answerText: "By using state"}, 
+            {answerText: "By using the constructor"}, 
+            {answerText: "By using the render() method"}, 
+    ]},
+    
+        {
+        question: "How do you create a new instance of a React component?", 
+        questionNumber: "10",
+        answerOptions: [
+            {answerText: "By using the React.createClass() method"}, 
+            {answerText: "By calling the component's constructor"}, 
+            {answerText: "By using the ReactDOM.render() method"}, 
+            {answerText: "By using the new keyword"}, 
+    ]},
+    
+    ]
+
     const nextButtonClick = () => {
         const nextQuestion = currentQuestion + 1;
         setCurrentQuestion(nextQuestion);
@@ -60,35 +141,9 @@ function Quiz() {
 export default Quiz
 
 
-// {question: "What is the purpose of a constructor in a React component?", answer-one: 
-// "To create the component's HTML structure", answer-two: "To initialize the component's
-// state and bind event handlers", answer-three: "To set the component's CSS styles", 
-// answer-four: "To handle user input"}
-// {question: "How do you render a React component?", answer-one: "By calling its render()
-// method", answer-two: "By calling its constructor", answer-three: "By using the 
-// ReactDOM.render() method", answer-four: "By setting the component's state"}
-// {question: "What is the difference between props and state in a React component?", 
-// answer-one: "Props are used to pass data to a component, while state is used to 
-// manage data within a component", answer-two: "Props and state are the same thing", 
-// answer-three: "Props are used for styling, while state is used for data management", 
-// answer-four: "State is used to pass data to a component, while props are used to 
-// manage data within a component"}
-// {question: "What is the purpose of the render() method in a React component?", answer-
-// one: "To update the component's state", answer-two: "To render the component's HTML 
-// structure", answer-three: "To bind event handlers to the component", answer-four: "To 
-// pass data to child components"}
-// {question: "How do you define a functional component in React?", answer-one: "By 
-// extending the Component class", answer-two: "By using the function keyword", answer-
-// three: "By using the render() method", answer-four: "By creating a new instance of the 
-// React.Component class"}
-// {question: "What is the purpose of the key prop in a React component?", answer-one: 
-// "To uniquely identify a component in a list", answer-two: "To set the component's CSS 
-// styles", answer-three: "To define the component's event handlers", answer-four: "To 
-// define the component's props"}
-// {question: "How do you pass data from a parent component to a child component in 
-// React?", answer-one: "By using props", answer-two: "By using state", answer-three: "By 
-// using the constructor", answer-four: "By using the render() method"}
-// {question: "How do you create a new instance of a React component?", answer-one: "By 
-// using the React.createClass() method", answer-two: "By calling the component's 
-// constructor", answer-three: "By using the ReactDOM.render() method", answer-four: "By 
-// using the new keyword"}
+
+
+
+
+
+
