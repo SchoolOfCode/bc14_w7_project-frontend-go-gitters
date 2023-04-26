@@ -9,7 +9,7 @@ import "./Quiz.css"
 // STRETCH When click next compare answer with correct answer - if correct congratulate - if incorrect support and explain logic
 
 
-function Quiz() {
+export default function Quiz() {
 
     const questions = [
        {
@@ -117,6 +117,49 @@ function Quiz() {
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [score, setScore] = useState(0);
+  
+    const handleAnswerOptionClick = (answer) => {
+      setSelectedAnswer(answer);
+    };
+  
+    const handleNextQuestionClick = () => {
+      if (selectedAnswer && selectedAnswer.answer) {
+        console.log("true")
+        setScore(score + 1);
+      }
+      setSelectedAnswer(null);
+      setCurrentQuestion(currentQuestion + 1);
+    };
+  
+    const currentQuizQuestion = questions[currentQuestion];
+  
+    return (
+      <div className="quiz">
+      <h3>{score}</h3>
+        <h1 className="quiz__title">{currentQuizQuestion.question}</h1>
+        <ol className="quiz__options">
+          {currentQuizQuestion.answerOptions.map((answerOption) => (
+            <li
+              key={answerOption.answerText}
+              className={
+                "quiz__option" +
+                (selectedAnswer === answerOption ? " quiz__option--selected" : "")
+              }
+              onClick={() => handleAnswerOptionClick(answerOption)}
+            >
+              {answerOption.answerText}
+            </li>
+          ))}
+        </ol>
+        <button onClick={handleNextQuestionClick}>Next</button>
+      </div>
+    );
+  }
+
+     /* 
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
 
     const nextButtonClick = () => {
         const nextQuestion = currentQuestion + 1;
@@ -132,10 +175,16 @@ function Quiz() {
     //         }
     //     };
 
-    let multiChoiceAnswer = questions[currentQuestion].answerOptions.map((answerOption) =>  <li>{answerOption.answer}</li> );
+    // let multiChoiceAnswer = questions[currentQuestion].answerOptions.map((answerOption) =>  <li>{answerOption.answer}</li> );
        
-    let multiChoiceOptions = questions[currentQuestion].answerOptions.map((answerOption) =>  <li>{answerOption.answerText}</li> );
+    let multiChoiceOptions = questions[currentQuestion].answerOptions.map((answerOption) =>  <li onClick={checkAnswer}>{answerOption.answerText}</li> );
        
+
+    function checkAnswer () {
+        if (questions[currentQuestion].answerOptions.answer == true)
+        {console.log("true!")}
+        else {console.log ("false")}
+    }
 
     return(
         <div>
@@ -144,14 +193,13 @@ function Quiz() {
         <p>{ questions[currentQuestion].question }</p> 
             <ul>
                 {multiChoiceOptions}
-                {multiChoiceAnswer}
             </ul>
             <button onClick={nextButtonClick}>Next</button>
         </div>
     )
 }
 
-export default Quiz
+export default Quiz */ 
 
 
 

@@ -16,3 +16,5 @@ li:focus {
 li:visited {
     background-color: aquamarine;
 }
+
+.quiz {padding-top: 100px;}
