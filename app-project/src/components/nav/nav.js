@@ -1,17 +1,19 @@
-import React from "react"
-import "./nav.css"
-import {useState} from "react"
+import React from "react";
+import "./nav.css";
+import { useState } from "react";
+import logo from "./logo.png";
 
 function Navbar() {
-      const [isNavExpanded, setIsNavExpanded] = useState(false)
-   
-    return (
-      <nav className="navigation">
-        <a href="/" className="brand-name">
-          Logo here
-        </a>
-        <button className="hamburger" 
-                onClick={() => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  return (
+    <nav className="navigation">
+      <a href="/" className="brand-name">
+        <img className="logo" src={logo} alt="website logo" />
+      </a>
+      <button
+        className="hamburger"
+        onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}>
           <svg
@@ -48,4 +50,4 @@ function Navbar() {
     );
   }
 
-export default Navbar
+export default Navbar;
