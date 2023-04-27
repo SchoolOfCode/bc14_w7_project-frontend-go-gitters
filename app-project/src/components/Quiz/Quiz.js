@@ -3,13 +3,17 @@
 // use useState to update the questions on the page dynamically ✅
 // link the button to the webpage ✅
 // when button is clicked a new question should appear ✅
-// When answer Option is selected it should be highlighted 
+// When answer Option is selected it should be highlighted ✅
+// When next button the score should be updated ✅
+// alert user of score when reach questions.length ✅
 // STRETCH When click next compare answer with correct answer - if correct congratulate - if incorrect support and explain logic
 
 import { useState } from "react";
 import "./Quiz.css"; // import the CSS file
 
 export default function Quiz() {
+
+  //APP Question data
   const questions = [
     {
      question: "What is a React component?", 
@@ -114,35 +118,43 @@ export default function Quiz() {
  ]},
  ]
 
+// APP Quiz Logic
+// useState to update the questions on the page dynamically, keep track of the score and which option is currently selected.
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
 
+// function to handle when an answer option is clicked
   const handleAnswerOptionClick = (answer) => {
     setSelectedAnswer(answer);
   };
 
+// function to handle when the next button is clicked
   const handleNextQuestionClick = () => {
-    // check if the selected answer is correct
-    const isCorrect = selectedAnswer?.answer;
-    if (isCorrect) {
+    const isCorrect = selectedAnswer && selectedAnswer.answer; // if selectedAnswer is true and selectedAnswer.answer is true, then isCorrect is true
+    if (isCorrect === true) {
       setScore(score + 1);
     }
+
     setSelectedAnswer(null);
+
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
-      // show the final score
-      alert(`Your score is ${score} out of ${questions.length}`);
+      alert(`Your score is ${score} out of ${questions.length}`); // alert the user of their score
     }
   };
 
+  // JSX to display the questions and answer options 
+  //use .map to loop through the answer options and display them on the page as list items
+  // *** within the list item, if the selectedAnswer is true and the selectedAnswer.answerText is equal to the answerOption.answerText, then add the class "selected" to the list item
+  // clicking on the list item will call the handleAnswerOptionClick function and pass in the answerOption as an argument
   return (
     <div className="quiz-container">
       <div className="question-section">
         <div className="question-count">
-          <span>Question {currentQuestion + 1}</span>/{questions.length}
+          <span>Question {currentQuestion + 1}</span>/{questions.length} 
         </div>
         <div className="question-text">
           {questions[currentQuestion].question}
@@ -152,7 +164,7 @@ export default function Quiz() {
         {questions[currentQuestion].answerOptions.map((answerOption) => (
           <li
             className={`answer-button ${
-              selectedAnswer?.answerText === answerOption.answerText
+              selectedAnswer && selectedAnswer.answerText === answerOption.answerText
                 ? "selected"
                 : ""
             }`}
@@ -173,54 +185,6 @@ export default function Quiz() {
     </div>
   );
 }
-
-
-// previous code
-
-     /* 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-
-    const nextButtonClick = () => {
-        const nextQuestion = currentQuestion + 1;
-        setCurrentQuestion(nextQuestion);
-    };
-    
-    // const answerChecker = (selectedAnswer, index) => {
-    //         setSelectedAnswer(index);
-    //         if (selectedAnswer.answer === true) {
-    //             console.log("correct");
-    //         } else {
-    //             console.log("incorrect");
-    //         }
-    //     };
-
-    // let multiChoiceAnswer = questions[currentQuestion].answerOptions.map((answerOption) =>  <li>{answerOption.answer}</li> );
-       
-    let multiChoiceOptions = questions[currentQuestion].answerOptions.map((answerOption) =>  <li onClick={checkAnswer}>{answerOption.answerText}</li> );
-       
-
-    function checkAnswer () {
-        if (questions[currentQuestion].answerOptions.answer == true)
-        {console.log("true!")}
-        else {console.log ("false")}
-    }
-
-    return(
-        <div>
-        <h3>{ questions[currentQuestion].questionNumber }</h3>
-
-        <p>{ questions[currentQuestion].question }</p> 
-            <ul>
-                {multiChoiceOptions}
-            </ul>
-            <button onClick={nextButtonClick}>Next</button>
-        </div>
-    )
-}
-
-export default Quiz */ 
-
 
 
 
