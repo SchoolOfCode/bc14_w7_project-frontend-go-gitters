@@ -60,7 +60,7 @@
 }
 
 .hamburger:hover {
-  background-color: #2642af;
+  background-color: #132F3E;
 }
 
 @media screen and (max-width: 5000px) {
@@ -82,7 +82,6 @@
     right: 0;
     flex-direction: column;
     width: 20%;
-    height: calc(100vh - 77px);
     background-color: white;
   }
   .navigation-menu li {
