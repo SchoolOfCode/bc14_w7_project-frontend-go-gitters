@@ -7,6 +7,10 @@ import Quiz from "../Quiz/Quiz";
 import QuizPage from "../../Pages/QuizPage";
 import Home from "../../Pages/Home";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import ResourcePage from "../../Pages/Resources";
+import FCTopic from "../../Pages/FCTopic";
+import QTopic from "../../Pages/QuizTopic";
+import CardCarousel from "../flashcards";
 
 
 
@@ -17,9 +21,12 @@ function App() {
       <Navbar/>
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Learn" element={<FlashCardPage />} />
-          <Route path="/Test" element={<QuizPage />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Learn" element={<FCTopic />} />
+          <Route path="/Test" element={<QTopic />} />
+          <Route path="Test/Quiz" element={<Quiz/>} />
+          <Route path="Learn/Flashcards" element={<CardCarousel/>} />
+          <Route path="/Resource" element={<ResourcePage/>} />
         </Routes> 
       </div>
     </>
