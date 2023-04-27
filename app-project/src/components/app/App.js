@@ -2,10 +2,12 @@ import React from "react"
 import FlashCardPage from "../../Pages/FlashCardPage";
 import './App.css';
 import "../flashcards/index.css"
-import Navbar from "../nav/nav";
+import Navbar from "../nav/nav"
+import Quiz from "../quiz/Quiz";
 import QuizPage from "../../Pages/QuizPage";
 import Home from "../../Pages/Home";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+
 
 
 function App() {

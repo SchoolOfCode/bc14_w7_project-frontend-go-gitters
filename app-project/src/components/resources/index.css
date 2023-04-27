@@ -1,0 +1,30 @@
+.heading {margin-top: 200px;
+margin-bottom: 20px;;}
+
+
+.resources-display { 
+    display: flex; 
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    }
+
+.resource { border-style: solid;
+    display:block;
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 300x;
+    max-height: 200px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    text-align: center;
+    margin-right: 20px;
+    background-color: white;
+    border-color: grey}
+
+    .subheading {font-size: 14pt;;}
