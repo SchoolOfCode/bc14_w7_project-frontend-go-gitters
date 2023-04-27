@@ -2,6 +2,7 @@
     margin-top: 100px;
     margin-bottom: 40px;
     text-align: center;
+    font-size: 28pt;
 }
     
     .resources-display { 
@@ -29,14 +30,14 @@
         margin-left: 20px;
         margin-right: 20px;
         text-align: center;
-        background-color: #A5CBC3;
+        background-color: #BEDDEE;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        border-color: grey;
+        border-color: #3fbafc;
         text-decoration: none;
     }
 
 .heading {
-    color: #d6e3ea;
+    color: rgb(214, 227, 234);
 }
 
 a {
@@ -44,3 +45,9 @@ a {
     color: black;
 }
     
+.description {color: rgb(214, 227, 234);
+text-align:center ;
+margin-left: 70px;
+margin-right: 70px;
+margin-bottom: 40px;
+font-size: 20pt;}

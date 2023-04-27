@@ -1,6 +1,7 @@
 .HomePage {
   display: flex;
   flex-direction: row;
+  font-family: monospace;
 }
 
 .laptop {
@@ -17,10 +18,13 @@ h1 {
   margin-left: 125px;
   text-align: left;
   color: #d6e3ea;
+  font-family: monospace;
 }
 
 h3 {
   color: #d6e3ea;
+  font-family: monospace;
+  font-size: 16pt;
 }
 
 .laptopContainer {
@@ -39,7 +43,7 @@ h3 {
 
 .button-56 {
   align-items: center;
-  background-color: #a2e5e3;
+  background-color: #3fbafc;
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
