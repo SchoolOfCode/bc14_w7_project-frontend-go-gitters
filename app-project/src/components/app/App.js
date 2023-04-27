@@ -3,10 +3,11 @@ import FlashCardPage from "../../Pages/FlashCardPage";
 import './App.css';
 import "../flashcards/index.css"
 import Navbar from "../nav/nav"
-import Quiz from "../quiz/Quiz";
+import Quiz from "../Quiz/Quiz";
 import QuizPage from "../../Pages/QuizPage";
 import Home from "../../Pages/Home";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import ResourcePage from "../../Pages/Resources";
 
 
 
@@ -17,9 +18,10 @@ function App() {
       <Navbar/>
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Learn" element={<FlashCardPage />} />
           <Route path="/Test" element={<QuizPage />} />
+          <Route path="/Resource" element={<ResourcePage/>} />
         </Routes> 
       </div>
     </>

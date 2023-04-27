@@ -39,6 +39,9 @@ function Navbar() {
             <li>
               <a href="../Test">Test</a>
             </li>
+            <li>
+              <a href="../Resources">Resources</a>
+            </li>
           </ul>
         </div>
       </nav>
