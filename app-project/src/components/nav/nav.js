@@ -40,7 +40,7 @@ function Navbar() {
               <a href="../Test">Test</a>
             </li>
             <li>
-              <a href="../Resources">Resources</a>
+              <a href="../Resource">Resources</a>
             </li>
           </ul>
         </div>
