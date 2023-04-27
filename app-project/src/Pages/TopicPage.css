@@ -1,6 +1,8 @@
-.heading {margin-top: 250px;
+.heading {
+    margin-top: 100px;
     margin-bottom: 40px;
-    text-align: center;}
+    text-align: center;
+}
     
     .resources-display { 
         display: flex; 
@@ -14,7 +16,9 @@
         font-size: 24px;
         }
     
-    .topic { border-style: solid;
+    .topic { 
+        border-style: solid;
+        border-radius: 5px;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -25,9 +29,18 @@
         margin-left: 20px;
         margin-right: 20px;
         text-align: center;
-        background-color: white;
+        background-color: #A5CBC3;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        border-color: grey}
+        border-color: grey;
+        text-decoration: none;
+    }
 
+.heading {
+    color: #d6e3ea;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
     

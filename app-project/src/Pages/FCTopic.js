@@ -9,22 +9,22 @@ export default function FCTopic() {
     <div className = "resources-display">
         <div className= "topic"><a href="../Learn/Flashcards">All Topics </a></div>
         <div className= "topic">Objects</div>
-        <div className= "topic">Arrays</div>
-        <div className= "topic">Arrays</div>
-        <div className= "topic">Arrays</div>
+        <div className= "topic">APIs</div>
+        <div className= "topic">UX</div>
+        <div className= "topic">UI</div>
     </div>
     <div className = "resources-display">
         <div className= "topic">Functions</div>
         <div className= "topic">While loops</div>
-        <div className= "topic">For loops</div>
-        <div className= "topic">For loops</div>
-        <div className= "topic">For loops</div>
+        <div className= "topic">Agile</div>
+        <div className= "topic">CSS</div>
+        <div className= "topic">HTML</div>
     </div>
     <div className = "resources-display">
         <div className= "topic">If statements</div>
         <div className= "topic">The DOM</div>
-        <div className= "topic">React Hooks</div>
-        <div className= "topic">React Hooks</div>
+        <div className= "topic">Javascript</div>
+        <div className= "topic">React</div>
         <div className= "topic">React Hooks</div>
     </div>
     </div>

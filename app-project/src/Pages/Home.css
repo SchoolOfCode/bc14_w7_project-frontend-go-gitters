@@ -7,10 +7,14 @@
   width: 500px;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 .text {
-  margin-top: 250px;
+  margin-top: 180px;
   width: 40%;
-  margin-left: 85px;
+  margin-left: 125px;
   text-align: left;
   color: #d6e3ea;
 }
@@ -30,7 +34,7 @@ h3 {
 .buttonDiv {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 40px;
 }
 
 .button-56 {
@@ -55,6 +59,8 @@ h3 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-decoration: none;
+  margin-top: 5px;
 }
 
 .button-56:after {
@@ -70,23 +76,32 @@ h3 {
   transform: translate(8px, 8px);
   transition: transform 0.2s ease-out;
   z-index: -1;
+  text-decoration: none;
 }
 
 .button-56:hover:after {
   transform: translate(0, 0);
+  text-decoration: none;
 }
 
 .button-56:active {
   background-color: #ffdeda;
   outline: 0;
+  text-decoration: none;
 }
 
 .button-56:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
   .button-56 {
     padding: 0 40px;
+    text-decoration: none;
   }
+}
+
+a {
+  text-decoration: none;
 }

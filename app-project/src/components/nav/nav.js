@@ -20,7 +20,7 @@ function Navbar() {
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
             viewBox="0 0 20 20"
-            fill="white"
+            fill="grey"
           >
             <path
               fillRule="evenodd"
@@ -33,7 +33,7 @@ function Navbar() {
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="../Learn">Learn</a>

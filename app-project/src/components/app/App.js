@@ -21,7 +21,7 @@ function App() {
       <Navbar/>
       <div>
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Learn" element={<FCTopic />} />
           <Route path="/Test" element={<QTopic />} />
           <Route path="Test/Quiz" element={<Quiz/>} />
