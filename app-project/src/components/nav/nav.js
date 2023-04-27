@@ -2,13 +2,13 @@ import React from "react"
 import "./nav.css"
 import {useState} from "react"
 
-export default function Navbar() {
+function Navbar() {
       const [isNavExpanded, setIsNavExpanded] = useState(false)
    
     return (
       <nav className="navigation">
         <a href="/" className="brand-name">
-          <b>JStudy</b>
+          Logo here
         </a>
         <button className="hamburger" 
                 onClick={() => {
@@ -31,16 +31,18 @@ export default function Navbar() {
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
           <ul>
             <li>
-              <a href="/home">Profile</a>
+              <a href="/home">Home</a>
             </li>
             <li>
-              <a href="../flashcards">Study</a>
+              <a href="../Learn">Learn</a>
             </li>
             <li>
-              <a href="../quiz">Quiz</a>
+              <a href="../Test">Test</a>
             </li>
           </ul>
         </div>
       </nav>
     );
   }
+
+export default Navbar

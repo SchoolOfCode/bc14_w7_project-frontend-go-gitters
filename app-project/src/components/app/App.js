@@ -6,18 +6,23 @@ import Navbar from "../nav/nav"
 import Quiz from "../quiz/Quiz";
 import QuizPage from "../../Pages/QuizPage";
 import Home from "../../Pages/Home";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 
 
 
 function App() {
+
   return (
-    <Router>
-          <Navbar />
-          <Route exact path="/" component={Home}  />
-          <Route path="/QuizPage" component={QuizPage } />
-          <Route path="/FlashCardPage" component={FlashCardPage } />
-    </Router>
+    <>
+      <Navbar/>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Learn" element={<FlashCardPage />} />
+          <Route path="/Test" element={<QuizPage />} />
+        </Routes> 
+      </div>
+    </>
   );
 }
 
@@ -36,3 +41,11 @@ export default App;
 //     </Router>
 //   );
 // }
+
+
+{/* <Router>
+<Navbar />
+<Route exact path="/" component={Home}  />
+<Route path="/QuizPage" component={QuizPage } />
+<Route path="/FlashCardPage" component={FlashCardPage } />
+</Router> */}
