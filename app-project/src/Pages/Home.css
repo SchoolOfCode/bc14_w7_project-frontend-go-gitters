@@ -1,38 +1,56 @@
-.HomePage {display: flex;
-flex-direction: row;}
-
-
-.laptop {width: 500px;}
-
-.text {margin-top: 250px;
-    width: 40%;
-    margin-left: 85px;
-    text-align: left;
+.HomePage {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.laptopContainer {width: 40%;
-margin-left: 100px;
-margin-right: 50px;
-margin-top: 200px;
-margin-bottom: 100px;}
+.laptop {
+  width: 500px;
+}
 
+h1 {
+  font-size: 50px;
+}
+
+.text {
+  margin-top: 180px;
+  width: 40%;
+  margin-left: 125px;
+  text-align: left;
+  color: #d6e3ea;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  color: #d6e3ea;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+}
+
+.laptopContainer {
+  width: 40%;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
 
 .buttonDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .button-56 {
   align-items: center;
-  background-color: #a2e5e3;
+  background-color: #3fbafc;
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
@@ -45,6 +63,8 @@ margin-bottom: 100px;}
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-decoration: none;
+  margin-top: 5px;
 }
 
 .button-56:after {
@@ -58,25 +78,34 @@ margin-bottom: 100px;}
   position: absolute;
   top: -2px;
   transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
+  transition: transform 0.2s ease-out;
   z-index: -1;
+  text-decoration: none;
 }
 
 .button-56:hover:after {
   transform: translate(0, 0);
+  text-decoration: none;
 }
 
 .button-56:active {
-  background-color: #ffdeda;
+  background-color: #3452d8;
   outline: 0;
+  text-decoration: none;
 }
 
 .button-56:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
   .button-56 {
     padding: 0 40px;
+    text-decoration: none;
   }
+}
+
+a {
+  text-decoration: none;
 }

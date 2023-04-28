@@ -1,6 +1,9 @@
-.heading {margin-top: 250px;
+.heading {
+    margin-top: 150px;
     margin-bottom: 40px;
-    text-align: center;}
+    text-align: center;
+    font-size: 28pt;
+}
     
     .resources-display { 
         display: flex; 
@@ -14,7 +17,9 @@
         font-size: 24px;
         }
     
-    .topic { border-style: solid;
+    .topic { 
+        border-style: solid;
+        border-radius: 5px;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -25,9 +30,30 @@
         margin-left: 20px;
         margin-right: 20px;
         text-align: center;
-        background-color: white;
+        background-color: #BEDDEE;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        border-color: grey}
+        border-color: #3fbafc;
+        text-decoration: none;
+    }
 
+.image {width: 400px;
+    margin-top: 150px;
+height: 300px;
+margin-left: 580px;
+margin-right: 400px;}
 
+.heading {
+    color: rgb(214, 227, 234);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
     
+.description {color: rgb(214, 227, 234);
+text-align:center ;
+margin-left: 70px;
+margin-right: 70px;
+margin-bottom: 40px;
+font-size: 20pt;}
