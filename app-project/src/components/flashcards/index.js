@@ -15,6 +15,7 @@ import "./index.css";
 export default function CardCarousel(props) {
   return (
     <div className="main">
+    <h2 className = "title">Flashcards: Random</h2>
       <ul className="scroll-container" data-layoutmethod="grid">
         <li className="scroll-item">
           <h3>JSX</h3>
