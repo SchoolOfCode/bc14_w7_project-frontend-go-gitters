@@ -4,12 +4,12 @@ import "./index.css"
 import coding from "./coding.jpg"
 export default function Resources() {
 
-    return <div> <img className ="coding" src={coding} alt= "laptop with code"/>
+    return <div> 
     <h2 className = "heading">Resource Hub</h2>
     <h2 className = "sub">Our ever expanding resource library has everything you need to excel as a developer, all in one place. </h2>
     <h2 className = "subheading">UI Libraries</h2>
     <div className = "resources-display">
-<div className= "resource"><b><u>React Bootstrap</u></b> <br></br>React Bootstrap rebuilds Bootstrap — the most popular frontend framework for React. And this has the advantage of removing the unnecessary jQuery dependency.</div> 
+<div className= "resource"><b><u><a href= "https://react-bootstrap.github.io">React Bootstrap</a></u></b> <br></br>React Bootstrap rebuilds Bootstrap — the most popular frontend framework for React. And this has the advantage of removing the unnecessary jQuery dependency.</div> 
 <div className= "resource"><b><u>Core UI</u></b> <br></br>Core UI is one of the most robust and powerful React UI component libraries.  </div> 
 <div className= "resource"><b><u>Prime React</u></b> <br></br>PrimeReact is one of the most extraordinary React UI kits, features a collection of more than 70 components to choose from.</div> 
 </div>
