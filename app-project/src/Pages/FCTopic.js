@@ -1,11 +1,11 @@
 import React from "react"
 import "./TopicPage.css"
+import study from "./studying2.png"
 
 export default function FCTopic() {
 
     return (
     <div>
-    <img></img>
     <h2 className = "heading">Flashcard Bank</h2>
     <h2 className ="description">Whether you're confused by CSS, angry at arrays, or completely over objects, we have the flashcards for you.<br></br><br></br>Select a topic below, or click 'susprise me' for a random deck of cards.</h2>
     <div className = "resources-display">

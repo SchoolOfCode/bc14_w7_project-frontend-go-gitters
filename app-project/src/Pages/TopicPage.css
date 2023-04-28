@@ -1,5 +1,5 @@
 .heading {
-    margin-top: 100px;
+    margin-top: 10px;
     margin-bottom: 40px;
     text-align: center;
     font-size: 28pt;
@@ -35,6 +35,12 @@
         border-color: #3fbafc;
         text-decoration: none;
     }
+
+.image {width: 400px;
+    margin-top: 150px;
+height: 300px;
+margin-left: 580px;
+margin-right: 400px;}
 
 .heading {
     color: rgb(214, 227, 234);

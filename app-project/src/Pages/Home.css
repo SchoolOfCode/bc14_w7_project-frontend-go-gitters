@@ -1,7 +1,7 @@
 .HomePage {
   display: flex;
   flex-direction: row;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .laptop {
@@ -18,12 +18,12 @@ h1 {
   margin-left: 125px;
   text-align: left;
   color: #d6e3ea;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
   color: #d6e3ea;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16pt;
 }
 

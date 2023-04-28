@@ -1,5 +1,6 @@
 import React from "react"
 import "./TopicPage.css"
+import studying from "./studying.png"
 
 export default function QTopic() {
 
