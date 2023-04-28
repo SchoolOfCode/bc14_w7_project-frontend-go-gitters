@@ -9,13 +9,7 @@ function Home() {
     <div className = "HomePage">
     <div className = "text">
     <h1 className='main-heading'>Welcome Back!</h1>
-    <h3>Master coding from bootcamp and beyond with the help of our library of quizzes, flashcards and resources.
-
-Coding is one of the most important skills for the 21st century, and we're committed to making sure that you master it.</h3>
-
-<h3>Whether you're a beginner, bootcamper, or boss, we have something for you.
-
-Become a Code Master today!</h3> 
+    <h3>Master coding from bootcamp and beyond with the help of our library of quizzes, flashcards and resources. <br></br><br></br>Whether you're a beginner, bootcamper, or boss, we have something for you. <br></br><br></br>Become a Code Master today!</h3> 
 <div class="buttonDiv">
 <a href="../Test"><button className="button-56">Test</button> </a>
 <a href="../Learn"><button className="button-56">Learn</button></a> </div>

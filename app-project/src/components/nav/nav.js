@@ -44,6 +44,9 @@ function Navbar() {
             <li>
               <a href="../Resource">Resources</a>
             </li>
+            <li>
+              <a href="/">Log Out</a>
+            </li>
           </ul>
         </div>
       </nav>
