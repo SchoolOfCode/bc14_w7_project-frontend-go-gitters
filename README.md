@@ -6,7 +6,7 @@ Our week 7 project was to build a front-end application which helps to address c
 https://github.com/SchoolOfCode/bc14_w7_project-frontend-go-gitters/assets/124946545/3f645114-3b5c-4e8e-b38f-17b74a833d40
 
 ## 🛠️ Tools & tech stack 
-React JS, Figma, Trello, Jamboard, VS Code, Git & Github 
+React JS, CSS, Figma, Trello, Jamboard, VS Code, Git & Github 
 
 ## 🏫 Lessons learned 
 - Adjusting the original plan due to change
