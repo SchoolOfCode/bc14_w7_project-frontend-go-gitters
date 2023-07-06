@@ -1,5 +1,5 @@
 # Code Master - SoC Mid-term project 
-Our week 7 project was to build a front-end application which helps to address challenges that bootcampers face while learning remotely. We decided to create an educational app packed with quizzes, flashcards & resources to help facilitate a bootcamper's learning. 
+Our week 7 project was to build a front-end application which helps to address challenges that bootcampers face while learning remotely. We decided to create an A revision website for bootcampers to consolidate and test their knowledge.
 
 ## Demo of the app 
 
