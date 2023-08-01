@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+/* .carousel {
+    display: flex;
+    justify-content: center;
+ } */
+
+/* .carousel {margin-left: auto;
+        margin-right:auto;
+        width: 60%; 
+    } */
+
+/* limit width so that content will need to scroll */
+body {
+  background-color: #16232a;
+  size: 100%;
+}
+
+.main {
+  max-width: 70;
+  padding-top: 50px;
+  margin-top: 130px;
+}
+
+/* SCROLL SNAPPING */
+.scroll-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.scroll-item {
+  scroll-snap-align: center;
+}
+
+/* remove list styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scroll-item {
+  /* make it square */
+  width: 311px;
+  height: 454px;
+  background-color: #d6e3ea;
+
+  /* some basic styling */
+  border-radius: 14px;
+
+  /* center contents */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-container[data-layoutmethod="flexbox"] .scroll-item {
+  margin-right: 1em; /* fake gap */
+  flex: 0 0 auto;
+}
+
+/* GRID LAYOUT */
+.scroll-container[data-layoutmethod="grid"] {
+  display: grid;
+  grid: auto / auto-flow max-content;
+  grid-gap: 1em;
+  align-items: center; /* vertically align children */
+}
+
+h4 {
+  width: 261px;
+  height: 324px;
+  left: 596px;
+  top: 456px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #132f3e;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  color: #132f3e;
+}
+
+.title {font-size: 28pt;
+color: #d6e3ea; 
+text-align: center;}
+
+.flashtitle {color: black}
